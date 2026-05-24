@@ -65,13 +65,13 @@ function Impact() {
           </p>
           <div className="impact-grid" style={{ marginTop: 28 }}>
             {[
-              { value: "67%", label: "Youth unemployment in informal settlements" },
-              { value: "1 in 3", label: "Young people without formal employment" },
-              { value: "<5%", label: "Children’s home youths in sustainable careers" },
+              { value: "67%", label: "Youth unemployment in informal settlements", accent: "accent-cyan" },
+              { value: "1 in 3", label: "Young people without formal employment", accent: "accent-purple" },
+              { value: "<5%", label: "Children’s home youths in sustainable careers", accent: "accent-sunset" },
             ].map((item, index) => (
-              <article key={index} className="impact-card" style={{ minHeight: 0, padding: "28px 24px" }}>
+              <article key={index} className={`impact-card ${item.accent}`} style={{ minHeight: 0, padding: "28px 24px" }}>
                 <div className="stat-value" style={{ fontFamily: "'Playfair Display',serif", fontSize: "2rem", fontWeight: 700, color: "#0f172a", marginBottom: 10 }}>{item.value}</div>
-                <div className="stat-label" style={{ fontSize: "0.94rem", color: "#64748b", lineHeight: 1.7 }}>{item.label}</div>
+                <div className="stat-label" style={{ fontSize: "0.94rem", color: "#475569", lineHeight: 1.7 }}>{item.label}</div>
               </article>
             ))}
           </div>
@@ -80,7 +80,7 @@ function Impact() {
 
       <section className="section-block">
         <div className="about-grid">
-          <div className="about-panel">
+          <div className="about-panel accent-cyan">
             <h2>Our Origin: Why We Exist</h2>
             <p>
               Baraka Digital Hub was born out of Baraka Children’s Home. For nearly two decades, the Children’s Home has been a place of refuge, care, and hope for vulnerable children in Kayole, Nairobi.
@@ -92,7 +92,7 @@ function Impact() {
               <strong>Baraka Digital Hub was created to close that gap. It is the bridge between care and independence.</strong>
             </p>
           </div>
-          <div className="about-card about-highlight">
+          <div className="about-card accent-purple">
             <h3>The Problem We Address</h3>
             <ul>
               <li>Traditional charity systems often lack a clear pathway from care to employment.</li>
@@ -132,7 +132,7 @@ function Impact() {
           </article>
         </div>
 
-        <div className="about-card about-highlight" style={{ marginTop: 24 }}>
+        <div className="about-card accent-sunset" style={{ marginTop: 24 }}>
           <p>
             <strong>Your invoice is also a school fees receipt.</strong>
           </p>
@@ -141,15 +141,15 @@ function Impact() {
 
       <section className="section-block">
         <div className="impact-highlight-grid">
-          <div className="impact-highlight">
+          <div className="about-card accent-cyan">
             <strong>70–80%</strong>
             <p>Goes directly to youth earnings so young people can build independence and dignity through fair, consistent income.</p>
           </div>
-          <div className="impact-highlight">
+          <div className="about-card accent-purple">
             <strong>10–15%</strong>
             <p>Supports hub operations including internet access, training, quality assurance, and operational management.</p>
           </div>
-          <div className="impact-highlight">
+          <div className="about-card accent-sunset">
             <strong>5–10%</strong>
             <p>Supports Baraka Children’s Home with school fees, daily meals, and essential care.</p>
           </div>
@@ -158,7 +158,7 @@ function Impact() {
 
       <section className="section-block">
         <div className="about-grid">
-          <div className="about-card">
+          <div className="about-card accent-cyan">
             <h3>Who We Serve</h3>
             <p>
               From the Children’s Home: young people who grew up in care and are now transitioning into independence through structured digital skills training and paid work.
@@ -170,7 +170,7 @@ function Impact() {
               <strong>We do not define people by where they come from. We define them by what they are ready to build.</strong>
             </p>
           </div>
-          <div className="about-card about-highlight">
+          <div className="about-card accent-purple">
             <h3>The Ripple Effect</h3>
             <ul>
               <li>Client work generates income for youth.</li>

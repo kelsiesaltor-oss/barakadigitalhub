@@ -5,6 +5,9 @@ function About() {
         <div className="text-block">
           <p className="highlight-pill">About Baraka</p>
           <h1>Who we are</h1>
+          <p style={{ color: "#2563eb", fontWeight: 700, marginBottom: 14 }}>
+            Built on purpose. Delivered with quality. Powered by community.
+          </p>
           <p style={{ maxWidth: 720, margin: "0 auto 24px", color: "#334155", fontSize: "1.02rem" }}>
             We build reliable digital services and sustainable employment pathways for young people from underserved communities.
           </p>
@@ -105,7 +108,7 @@ function About() {
         </div>
 
         <div className="about-grid">
-          <div className="about-card">
+          <div className="about-card leadership-card leadership-card-blue">
             <h3>From Our Head of Operations</h3>
             <p>
               “Baraka Digital Hub was built on a simple belief: talent is universal, but opportunity is not. Our vision is to create a pathway where young people from underserved communities can access meaningful digital work, develop globally competitive skills, and build sustainable futures for themselves and their families.
@@ -119,7 +122,7 @@ function About() {
             <p style={{ marginTop: 20, fontWeight: 700 }}>Timothy Mwangi<br />Head of Operations</p>
             <p>Email: <a href="mailto:timothy.mwangi@barakadigitalhub.com">timothy.mwangi@barakadigitalhub.com</a></p>
           </div>
-          <div className="about-card about-highlight">
+          <div className="about-card leadership-card leadership-card-sunset">
             <h3>From Our President and Mama Baraka</h3>
             <p>
               “My life has always been rooted in children — loving them, raising them, and standing beside them through every season of their growth. As Mama Baraka, my deepest calling has been to ensure that no child under our care ever feels forgotten or without a future.
